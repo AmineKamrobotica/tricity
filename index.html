@@ -15,7 +15,11 @@
   <body>
     <div class="nav-bar">
       <img width="60px" src="./favicon.png" alt="logo" />
-      <h4 style="margin-right: 20px">Tricity⚡ | Survival PPS</h4>
+      <div class="header-btns">
+        <h4 style="margin-right: 20px">Tricity⚡ | Survival PPS</h4>
+        <button class="onoffbtns" id="on"><a href="/ont">on</a></button>
+        <button class="onoffbtns" id="off"><a href="/offt">off</a></button>
+      </div>
     </div>
     <div class="progress">
       <svg
@@ -41,9 +45,9 @@
       </div>
     </div>
     <div class="hints">
-      <div class="info"><p>this is info one</p></div>
-      <div class="info"><p>this is info two</p></div>
-      <div class="info"><p>this is info three</p></div>
+      <div class="info"><p>prtable</p></div>
+      <div class="info"><p>power</p></div>
+      <div class="info"><p>station</p></div>
     </div>
     <div class="switch-port">
       <h5>Port switch</h5>
@@ -53,8 +57,8 @@
       <div class="btns">
         <span>12V</span>
         <img width="35px" src="./images/NicePng_power-icon-png_494702.png" />
-        <button id="button"><a href="/onusb">open</a></button>
-        <button id="button2"><a href="/offusb">close</a></button>
+        <button id="button"><a href="/ondc">open</a></button>
+        <button id="button2"><a href="/offdc">close</a></button>
       </div>
       <div class="btns">
         <span>USB</span>
@@ -88,6 +92,9 @@
         class="slidere"
         id="slideval"
       />
+    </div>
+    <div class="soscontainer">
+      <button><a href="/sos">SOS</a></button>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

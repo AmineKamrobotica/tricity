@@ -21,12 +21,30 @@ window.randomize = function (rand) {
 setTimeout(window.randomize(50), 200);
 document.querySelector(".progress").click(window.randomize(50));
 var slideval = document.getElementById("slideval").value;
-  document.getElementById("values").innerHTML =
-    document.getElementById("slideval").value;
-  console.log(slideval);
+document.getElementById("values").innerHTML =
+  document.getElementById("slideval").value;
+console.log(slideval);
 function test() {
   var slideval = document.getElementById("slideval").value;
   document.getElementById("values").innerHTML =
     document.getElementById("slideval").value;
   console.log(slideval);
 }
+
+var onoff = false;
+
+if (!onoff) {
+  document.getElementById("on").style.display = "none";
+} else {
+  document.getElementById("off").style.display = "none";
+}
+document.getElementById("on").addEventListener("click", function () {
+  onoff = false;
+  document.getElementById("on").style.display = "none";
+  document.getElementById("off").style.display = "block";
+});
+document.getElementById("off").addEventListener("click", function () {
+  onoff = true;
+  document.getElementById("on").style.display = "block";
+  document.getElementById("off").style.display = "none";
+});
