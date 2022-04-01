@@ -5,96 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="nav-bar">
-      <img width="60px" src="./favicon.png" alt="logo" />
-      <div class="header-btns">
-        <h4 style="margin-right: 20px">Tricity⚡ | Survival PPS</h4>
-        <button class="onoffbtns" id="on"><a href="/ont">on</a></button>
-        <button class="onoffbtns" id="off"><a href="/offt">off</a></button>
+    <div class="container">
+      <div class="nav-bar">
+        <img width="60px" src="./favicon.png" alt="logo" />
+        <div class="header-btns">
+          <h4 style="margin-right: 20px">Tricity⚡ | Survival PPS</h4>
+          <button class="onoffbtns" id="on"><a href="/ont">on</a></button>
+          <button class="onoffbtns" id="off"><a href="/offt">off</a></button>
+        </div>
       </div>
-    </div>
-    <div class="progress">
-      <svg
-        class="progress-circle"
-        width="200px"
-        height="200px"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
-      </svg>
-      <div
-        class="progress-text"
-        data-progress="0"
-        style="
-          text-align: center;
-          font-size: 24px;
-          font-weight: lighter;
-          margin-top: 10px;
-        "
-      >
-        0%
+      <div class="progress">
+        <svg
+          class="progress-circle"
+          width="200px"
+          height="200px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
+          <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+        </svg>
+        <div
+          class="progress-text"
+          data-progress="0"
+          style="
+            text-align: center;
+            font-size: 24px;
+            font-weight: lighter;
+            margin-top: 10px;
+          "
+        >
+          0%
+        </div>
       </div>
-    </div>
-    <div class="hints">
-      <div class="info"><p>prtable</p></div>
-      <div class="info"><p>power</p></div>
-      <div class="info"><p>station</p></div>
-    </div>
-    <div class="switch-port">
-      <h5>Port switch</h5>
-      <p>Turn on/off ports</p>
-    </div>
-    <div class="hintss">
-      <div class="btns">
-        <span>12V</span>
-        <img width="35px" src="./images/NicePng_power-icon-png_494702.png" />
-        <button id="button"><a href="/ondc">open</a></button>
-        <button id="button2"><a href="/offdc">close</a></button>
+      <div class="hints">
+        <div class="info"><p>prtable</p></div>
+        <div class="info"><p>power</p></div>
+        <div class="info"><p>station</p></div>
       </div>
-      <div class="btns">
-        <span>USB</span>
-        <img width="35px" src="./images/bi_usb-micro-fill.png" />
-        <button id="button"><a href="/onusb">open</a></button>
-        <button id="button2"><a href="/offusb">close</a></button>
+      <div class="switch-port">
+        <h5>Port switch</h5>
+        <p>Turn on/off ports</p>
       </div>
-      <div class="btns">
-        <span>120V AC</span>
-        <img width="35px" src="./images/ac power.png" />
-        <button id="button"><a href="/onac">open</a></button>
-        <button id="button2"><a href="/offac">close</a></button>
+      <div class="hintss">
+        <div class="btns">
+          <span>12V</span>
+          <img width="35px" src="./images/NicePng_power-icon-png_494702.png" />
+          <button id="button"><a href="/ondc">open</a></button>
+          <button id="button2"><a href="/offdc">close</a></button>
+        </div>
+        <div class="btns">
+          <span>USB</span>
+          <img width="35px" src="./images/bi_usb-micro-fill.png" />
+          <button id="button"><a href="/onusb">open</a></button>
+          <button id="button2"><a href="/offusb">close</a></button>
+        </div>
+        <div class="btns">
+          <span>120V AC</span>
+          <img width="35px" src="./images/ac power.png" />
+          <button id="button"><a href="/onac">open</a></button>
+          <button id="button2"><a href="/offac">close</a></button>
+        </div>
       </div>
-    </div>
-    <div class="slider">
-      <p class="state">
-        <img
-          width="35px"
-          src="./images/ant-design_bulb-filled.png"
-          class="image"
+      <div class="slider">
+        <p class="state">
+          <img
+            width="35px"
+            src="./images/ant-design_bulb-filled.png"
+            class="image"
+          />
+          <span id="values">0</span> &percnt;
+        </p>
+        <input
+          style="margin-top: 20px"
+          onchange="test()"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          class="slidere"
+          id="slideval"
         />
-        <span id="values">0</span> &percnt;
-      </p>
-      <input
-        style="margin-top: 20px"
-        onchange="test()"
-        type="range"
-        min="0"
-        max="100"
-        step="1"
-        class="slidere"
-        id="slideval"
-      />
-    </div>
-    <div class="soscontainer">
-      <button><a href="/sos">SOS</a></button>
+      </div>
+      <div class="soscontainer">
+        <button><a href="/sos">SOS</a></button>
+      </div>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
