@@ -1,11 +1,11 @@
 window.randomize = function (rand) {
   var x = document.querySelector(".progress-circle-prog");
-  x.style.strokeDasharray = rand * 4.65 + " 999";
+  x.style.strokeDasharray = rand * 3.1 + " 999";
   var el = document.querySelector(".progress-text");
   var from = $(".progress-text").data("progress");
-  $(".progress-text").data("progress", rand);
+  document.querySelector(".progress-text").innerHTML = rand;
   var start = new Date().getTime();
-
+  console.log(document.querySelector(".progress-text").value);
   setTimeout(function () {
     var now = new Date().getTime() - start;
     var progress = now / 700;
@@ -30,7 +30,7 @@ function test() {
     document.getElementById("slideval").value;
   console.log(slideval);
 }
-
+/* 
 var onoff = false;
 var usbonoff = false;
 var aconoff = false;
@@ -51,3 +51,4 @@ document.getElementById("off").addEventListener("click", function () {
   document.getElementById("on").style.display = "block";
   document.getElementById("off").style.display = "none";
 });
+ */

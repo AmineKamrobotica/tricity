@@ -18,7 +18,7 @@ body {
 
 .progress-circle {
   transform: rotate(-90deg);
-  margin-top: 15px;
+  margin-top: 1px;
 }
 
 .progress-circle-back {
