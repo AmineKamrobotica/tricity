@@ -18,7 +18,7 @@ window.randomize = function (rand) {
   }, 10);
 };
 
-setTimeout(window.randomize(50), 200);
+setTimeout(window.randomize(50), 100);
 document.querySelector(".progress").click(window.randomize(50));
 var slideval = document.getElementById("slideval").value;
 document.getElementById("values").innerHTML =
